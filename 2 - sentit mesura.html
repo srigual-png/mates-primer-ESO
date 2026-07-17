@@ -3,7 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sentit de la Mesura · 1r ESO</title>
+<title>Exercicis de Sentit de la Mesura | Matemàtiques 1r d'ESO</title>
+
+<meta name="description"
+content="Practica el sentit de la mesura de 1r d'ESO amb exercicis interactius sobre longitud, massa, capacitat, superfície, volum, temps i conversions d'unitats. Explicacions pas a pas, pistes i correcció immediata.">
+
+<link rel="canonical"
+href="https://srigual-png.github.io/mates-primer-ESO/2 - sentit mesura.html">
 <style>
   :root {
     --bg:#f7f9fc;--card:#fff;--primary:#5b8dee;--primary-dark:#3a6fd8;
@@ -123,6 +129,22 @@
   .unlock-reset-btn:hover{border-color:var(--error);color:var(--error)}
   .unlock-panel-overlay{position:fixed;inset:0;z-index:190;display:none}
   .unlock-panel-overlay.open{display:block}
+.intro-card{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin: 0 auto 24px auto;
+    box-shadow: var(--shadow);
+    max-width: 640px;
+}
+
+.intro-card p{
+    margin:0;
+    line-height:1.7;
+    color:var(--text);
+    text-align:justify;
+}
 </style>
 </head>
 <body>
@@ -145,10 +167,20 @@
 
 <div class="layout">
 <div class="screen active" id="screenHome">
-  <div class="home-header"><h2>📏 Sentit de la Mesura</h2><p>1r d'ESO · Aprèn pas a pas</p></div>
+
+  <div class="home-header">
+    <h2>📏 Sentit de la Mesura</h2>
+    <p>1r d'ESO · Unitats de mesura · Exercicis interactius · Correcció immediata</p>
+  </div>
+
+  <div class="intro-card">
+    <p>
+      El sentit de la mesura t'ajudarà a treballar amb les unitats que fem servir cada dia: longitud, massa, capacitat, temps, perímetres, àrees i estimació. Aprendràs a convertir unitats, escollir la més adequada en cada situació i resoldre problemes de manera raonada. T'explicaré cada concepte amb exemples senzills i podràs practicar amb exercicis interactius, pistes i correcció immediata. Escull el tema que necessitis i avança al teu ritme.
+    </p>
+  </div>
+
   <div class="topics-grid" id="topicsGrid"></div>
-</div>
-<div class="sidebar" id="sidebar">
+</div><div class="sidebar" id="sidebar">
   <button class="sidebar-btn" id="unlockFab" onclick="toggleUnlockPanel()" title="Gestionar temes">
     <span class="sb-icon">🔓</span>Desbloqueja temes
   </button>
@@ -1047,6 +1079,11 @@ function showApps(){
   document.getElementById('navTitle').textContent='Aplicacions Reals';
   document.getElementById('appContent').innerHTML=`
     <div class="home-header" style="padding-top:10px"><h2>🌍 Aplicacions Reals</h2><p>Practica amb situacions del dia a dia</p></div>
+          <div class="intro-card">
+          <p>
+El sentit de la mesura t'ajudarà a treballar amb les unitats que fem servir cada dia: longitud, massa, capacitat, temps, perímetres, àrees i estimació. Aprendràs a convertir unitats, escollir la més adequada en cada situació i resoldre problemes de manera raonada. T'explicaré cada concepte amb exemples senzills i podràs practicar amb exercicis interactius, pistes i correcció immediata. Escull el tema que necessitis i avança al teu ritme.
+          </p>
+          </div>
     <div class="app-card">
       <h3>🍳 Cuina — Converteix la recepta</h3>
       <p>Converteix capacitats entre unitats.</p>
