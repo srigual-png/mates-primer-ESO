@@ -137,11 +137,22 @@ nav h1{font-size:1.05rem;font-weight:700;color:var(--primary);flex:1;cursor:defa
     color: var(--text);
     text-align: justify;
 }
+.home-link{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.home-link:hover{
+    text-decoration:underline;
+}
 </style>
 </head>
 <body>
-<nav>
+<nav class="top-nav">
   <button class="nb" id="navBack" onclick="goBack()" style="display:none">&#8592;</button>
+  <a class="home-link" href="index.html">🏠 Mates Interactives</a>
   <h1 id="navTitle">Sentit Numeric 1r ESO</h1>
   <div class="pbw"><div class="pbf" id="gp" style="width:0%"></div></div>
 </nav>

@@ -107,11 +107,22 @@ textarea::placeholder{color:#b0bec5;font-size:.88rem}
 .bar-row{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:.82rem}
 .bar-wrap{flex:1;height:8px;background:var(--border);border-radius:4px}
 .bar-fill{height:8px;border-radius:4px;background:var(--primary);transition:width .5s}
+.home-link{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.home-link:hover{
+    text-decoration:underline;
+}
 </style>
 </head>
 <body>
-<nav>
-  <button class="nav-back" id="navBack" onclick="goHome()" style="display:none">←</button>
+<nav class="top-nav">
+  <button class="nb" id="navBack" onclick="goBack()" style="display:none">&#8592;</button>
+  <a class="home-link" href="index.html">🏠 Mates Interactives</a>
   <h1 id="navTitle">Corrector · Sentit de la Mesura</h1>
 </nav>
 

@@ -105,12 +105,23 @@ nav h1{font-size:1rem;font-weight:700;color:var(--primary);flex:1;}
 
 /* Focus highlight per saber quin camp actiu */
 .num-input.active-field{border-color:var(--primary);box-shadow:0 0 0 3px rgba(92,107,192,.15);}
+.home-link{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.home-link:hover{
+    text-decoration:underline;
+}
 </style>
 </head>
 <body>
 
-<nav>
-  <button class="nav-back" id="navBack" onclick="goBack()" style="display:none">←</button>
+<nav class="top-nav">
+  <button class="nb" id="navBack" onclick="goBack()" style="display:none">&#8592;</button>
+  <a class="home-link" href="index.html">🏠 Mates Interactives</a>
   <h1 id="navTitle">Problemes Sentit Espacial · 1r ESO</h1>
 </nav>
 

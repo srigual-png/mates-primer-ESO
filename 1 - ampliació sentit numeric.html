@@ -91,11 +91,23 @@ nav h1{font-size:1rem;font-weight:700;color:var(--primary);flex:1;}
 .part{color:var(--warn);font-weight:700;}
 /* Scroll helper */
 .scroll-top{display:none;}
+.home-link{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.home-link:hover{
+    text-decoration:underline;
+}
 </style>
 </head>
 <body>
-<nav>
-  <h1 id="navTitle">📐 Problemes Sentit Numèric</h1>
+<nav class="top-nav">
+  <button class="nb" id="navBack" onclick="goBack()" style="display:none">&#8592;</button>
+  <a class="home-link" href="index.html">🏠 Mates Interactives</a>
+  <h1 id="navTitle">Problemes Sentit Numèric</h1>
   <span id="navScore" style="font-size:.82rem;color:var(--muted);font-weight:600;"></span>
 </nav>
 

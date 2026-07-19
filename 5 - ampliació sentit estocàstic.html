@@ -70,11 +70,22 @@ nav h1{font-size:1.05rem;font-weight:700;color:var(--primary);flex:1;cursor:defa
 .congrats .trophy{font-size:2.8rem;margin-bottom:14px;}
 .congrats h2{font-size:1.4rem;color:var(--primary);margin-bottom:9px;}
 .congrats p{color:var(--muted);margin-bottom:22px;}
+.home-link{
+    text-decoration:none;
+    color:var(--primary);
+    font-weight:700;
+    white-space:nowrap;
+}
+
+.home-link:hover{
+    text-decoration:underline;
+}
 </style>
 </head>
 <body>
-<nav>
-  <button class="nav-back" id="navBack" onclick="goBack()" style="display:none">←</button>
+<nav class="top-nav">
+  <button class="nb" id="navBack" onclick="goBack()" style="display:none">&#8592;</button>
+  <a class="home-link" href="index.html">🏠 Mates Interactives</a>
   <h1 id="navTitle">Construeix i Calcula · 1r ESO</h1>
   <div class="progress-bar-wrap"><div class="progress-bar-fill" id="globalProgress" style="width:0%"></div></div>
 </nav>
